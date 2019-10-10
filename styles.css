@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+}
+
+.heading{
+	text-align: center;
+	width: to-screen;
+	border: 3px solid white;
+	padding: 25px;
+	margin: 0px;
+	grid-area: header;
+	font-family: Helvetica;
+}
+
+h1{
+	color: crimson;
+	font-family: cursive;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-areas: 'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+	grid-column-gap: 10px;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: center;
+	background-color: black;
+}
+
+.left{
+	grid-area: left;
+	background-color: lightblue;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 270px;
+}
+
+.middle{
+	grid-area: middle;
+	background-color: white;
+	margin-top: 10px;
+}
+
+.left, .middle{
+	padding: 10px;
+}
+
+img{
+	width: 10%;
+	height: auto;
+}
+
+
+
+p{
+	padding-left: 20px;
+	font-family: sans-serif;
+}
+
+h3{
+	padding-left: 20px;
+	font-family: Georgia;
+}
+
+#Picture{
+	width: 50%;
+	height: auto;
+	border-radius: 100px;
+}
+
+h3.WorkExperience{
+	display: flex;
+	justify-content: space-between;
+}
